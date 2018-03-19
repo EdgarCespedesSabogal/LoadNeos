@@ -23,7 +23,7 @@ Es un framework para cargar modelos LP (en Xpress-Ive) con sus parámetros en Ne
 Descarga todos los archivos del proyecto y ejecuta como prueba "SubmitNeos.py".
 - Debes ir al directorio donde los archivos fueron descargados
 - Desde la consola ejecute "python SubmitNeos.py"
-- Cuando se esté ejecuntando se creará un archivo llamado "Neos.txt" en el mismo directorio
+- Cuando se esté ejecutando se creará un archivo llamado "Neos.txt" en el mismo directorio
 - Y poco después se creará un archivo llamado "RtaNeos.csv". Este archivo es el resultado de Neos
 
 ¿Qué modificar?
