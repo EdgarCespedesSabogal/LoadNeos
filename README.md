@@ -16,7 +16,7 @@ It is all.
 
 -----------------------Español
 # LoadNeos
-Es una framework para cargar modelos LP (en Xpress-Ive) con sus parámetros en Neos-Server for Optimization. Trabaja con python 3.x y es putil cuando necesitas recibir los resultados en un archivo .txt o .csv
+Es un framework para cargar modelos LP (en Xpress-Ive) con sus parámetros en Neos-Server for Optimization. Trabaja con python 3.x y es putil cuando necesitas recibir los resultados en un archivo .txt o .csv
 
 ¿Cómo trabaja?
 
