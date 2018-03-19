@@ -33,7 +33,6 @@ def Neos():
 
 
 def AlistamientoTexto():
-    d=input("Ingresa el número de arboles quiere generar")
     with open("Part1.txt", "r") as myfile:
         data1=myfile.read()
     myfile.close()
