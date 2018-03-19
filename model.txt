@@ -1,0 +1,49 @@
+model mcfp
+uses "mmxprs"; !gain access to the Xpress-Optimizer solver
+
+!forward function getProblemStatus(status: integer): string
+
+
+declarations
+
+nodes: set of string
+!nodes2: set of string
+distancia:dynamic array(nodes,nodes) of real
+
+x:dynamic array(nodes,nodes) of mpvar
+
+
+end-declarations
+
+initializations from 'model.dat'
+distancia
+end-initializations	
+
+
+forall(i in nodes, j in nodes | exists(distancia(i,j)))do
+create(x(i,j))
+x(i,j) is_binary
+end-do
+
+
+forall(i in nodes)
+sum(j in nodes| exists(distancia(i,j)))x(i,j)>=1
+
+forall(i in nodes, j in nodes|exists(distancia(i,j)))
+x(i,j)=x(j,i)
+
+sum(i in nodes, j in nodes | exists(distancia(i,j)))x(i,j)>=getsize(distancia)-2*(12)
+
+
+!Funcion objetivo: Min costo
+totalCost:=sum(i in nodes, j in nodes | exists(x(i,j)))distancia(i,j)*x(i,j)
+
+minimize(totalCost)
+
+
+writeln("x,y")
+forall(i in nodes, j in nodes | getsol(x(i,j))>0)do
+writeln(i,",",j)
+end-do
+
+

@@ -1,0 +1,8 @@
+<document>
+<category>lp</category>
+<solver>FICO-Xpress</solver>
+<inputType>MOSEL</inputType>
+<client>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36@179.18.42.26</client>
+<priority>long</priority>
+<email>ponga@sucorreo.com</email>
+<model><![CDATA[
